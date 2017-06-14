@@ -9,6 +9,8 @@ bin-release/
 .settings/
 
 # Executables
+Thumbs.db
+desktop.ini
 *.swf
 *.air
 *.ipa
