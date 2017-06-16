@@ -59,7 +59,7 @@ body{
 }
 .logo{
 	float: left;
-	width: 497px;
+	width: 388px;
 	height: 279px;
 	background: green;
 	/*background: url("../images/logo-bg.png") no-repeat 50% 0;*/
@@ -67,7 +67,7 @@ body{
 .navigation,
 .column-position{
 	float: right;
-	width: 1036px;
+	width: 799px;
 	background: red;
 }
 
@@ -78,40 +78,38 @@ footer{
 	background: blue !important;
 }
 
-
+.navigation div:nth-of-type(3){
+	margin-right: 0;
+}
+ 
 
 
 
 .navigation div{
 	display: inline-block;
-	width: 320px;
+	width: 249px;
 	height: 71px;
 	background: darkgreen;
-	border: 1px dashed pink;
-	margin: 0 34px 0 -2px;
-}
-.navigation div:nth-of-type(3){
-	margin-right: 0;
+	margin: 0 22px 0 0;
 }
 
-@media only screen and (min-width: 992px){
-	.logo{
-		width: 377px;
-	}
-	.navigation{
+@media (max-width: 1300px){
+		.navigation{
 		display: block;
 		float: left;
-		width: 377px;
-		text-align: center;
+		width: 388px;
 	}
 	.column-position{
-		width: 781px;
+		width: 593px;
 	}
 	.navigation div{
-		width: 243px;
-		margin: 0;
+		width: 185px;
+		margin: 0 auto;
 	}
 	header{
 		float: left;
 	}
 }
+
+
+
