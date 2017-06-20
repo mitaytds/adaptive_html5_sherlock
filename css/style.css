@@ -42,72 +42,90 @@ table {
 	border-spacing: 0;
 }
 
-
-
-body{
-	background: url("../images/bg.png");
+ul{
+	height: auto;
 }
+
 /*grid*/
 
 .page{
-	background: url("../images/rag.png") repeat-x;
+	background:   url("../images/rag.png") repeat-x, url("../images/bg.png");
 	padding: 2em 0;
 }
 .inner{
+	position: relative;
 	margin: 0 auto;
 	width: 93.75%;
 }
 .logo{
 	float: left;
-	width: 388px;
-	height: 279px;
-	background: green;
-	/*background: url("../images/logo-bg.png") no-repeat 50% 0;*/
+	width: 33%;
+	text-align: center;
+	background: url("../images/logo-bg.png") no-repeat 50% 0;*/
 }
-.navigation,
+.nav,
 .column-position{
 	float: right;
-	width: 799px;
+	width: 65%;
 	background: red;
 }
-
+.nav li{
+	display: inline-block;
+	width: 11%;
+	background: grey;
+	height: 50px;
+}
+.logo a{
+	display: block;
+	padding-top: 117px;
+	height: 162px;
+}
+.text{
+	margin-top: 117px;
+}
 article,
 footer{
 	height: 100px;
 	border: 1px dashed pink;
 	background: blue !important;
 }
-
-.navigation div:nth-of-type(3){
-	margin-right: 0;
-}
- 
-
-
-
-.navigation div{
-	display: inline-block;
-	width: 249px;
-	height: 71px;
-	background: darkgreen;
-	margin: 0 22px 0 0;
-}
-
-@media (max-width: 1300px){
-		.navigation{
+	.mast{
+		position: absolute;
+		width: 100%;
+	}
+@media screen and (max-width: 1300px){
+		.nav{
+		clear: both;
 		display: block;
 		float: left;
-		width: 388px;
+		width: 33%;
 	}
-	.column-position{
-		width: 593px;
-	}
-	.navigation div{
-		width: 185px;
+	.nav li{
+		display: block;
 		margin: 0 auto;
 	}
-	header{
-		float: left;
+}
+@media (max-width: 768px){
+	.logo{
+		width: 100%;
+		background: none;
+	}
+	.logo a{
+		padding: 20%;
+	}
+	.nav{
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.nav li{
+		display: inline-block;
+	}
+	.text{
+		margin-top: 44%;
+	}
+	.column-position{
+		min-width: 100%;
 	}
 }
 
