@@ -57,23 +57,32 @@ ul{
 	margin: 0 auto;
 	width: 93.75%;
 }
+.mast{
+	position: absolute;
+	width: 100%;
+}
 .logo{
 	float: left;
 	width: 33%;
 	text-align: center;
-	background: url("../images/logo-bg.png") no-repeat 50% 0;*/
+	background: url("../images/logo-bg.png") no-repeat 50% 0;
 }
 .nav,
 .column-position{
 	float: right;
 	width: 65%;
 	background: red;
+	text-align: center;
 }
 .nav li{
 	display: inline-block;
-	width: 11%;
+	width: 31.7297%;
+	margin-right: 15px;
 	background: grey;
 	height: 50px;
+}
+.nav li:last-child{
+	margin: 0;
 }
 .logo a{
 	display: block;
@@ -83,16 +92,6 @@ ul{
 .text{
 	margin-top: 117px;
 }
-article,
-footer{
-	height: 100px;
-	border: 1px dashed pink;
-	background: blue !important;
-}
-	.mast{
-		position: absolute;
-		width: 100%;
-	}
 @media screen and (max-width: 1300px){
 		.nav{
 		clear: both;
@@ -103,15 +102,19 @@ footer{
 	.nav li{
 		display: block;
 		margin: 0 auto;
+
+	}
+	.nav li:last-child{
+	margin: auto;
 	}
 }
-@media (max-width: 768px){
+@media (max-width: 960px){
 	.logo{
 		width: 100%;
 		background: none;
 	}
 	.logo a{
-		padding: 20%;
+		padding: 10%;
 	}
 	.nav{
 		position: absolute;
@@ -122,12 +125,33 @@ footer{
 		display: inline-block;
 	}
 	.text{
-		margin-top: 44%;
+		margin-top: 22%;
 	}
 	.column-position{
 		min-width: 100%;
 	}
 }
+@media (max-width: 600px){
+		.logo a{
+		padding: 16%;
+	}
+		.text{
+		margin-top: 35%;
+	}
+}
+@media (max-width: 400px){
+		.logo a{
+		padding: 20%;
+	}
+		.text{
+		margin-top: 44%;
+	}
+}
 
 
-
+article,
+footer{
+	height: 100px;
+	border: 1px dashed pink;
+	background: blue !important;
+}
