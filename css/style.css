@@ -42,11 +42,52 @@ table {
 	border-spacing: 0;
 }
 
-ul{
-	height: auto;
-}
+/*base*/
 
-/*grid*/
+body{
+	font-size: 1em;
+	font-family: Cambria, Georgia, serif;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.75);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+a{
+	color: #890101;
+	text-decoration: none;
+}
+h1{
+	font-size: 2em;
+	font-family: Baskerville Old Face;
+	font-style: italic;
+	margin-bottom: 0.25em;
+}
+h2{
+	font-size: 1.4em;
+	margin: 0.75em 0 1em;
+	background: url("../images/ornament.png") no-repeat 0 50%;
+}
+p{
+	font-size: 1em;
+	line-height: 1.4;
+}
+span{
+	font-size: 0.625em;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+b{
+	display: block;
+	font-size: 1.25em;
+	font-family: "Book Antiqua", Georgia, serif;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+footer{
+	font-size: 0.750em;
+	background: url("../images/ornament.png") 50% 0 repeat-x;
+	padding: 40px 0 20px;
+}
+/*project*/
 
 .page{
 	background:   url("../images/rag.png") repeat-x, url("../images/bg.png");
@@ -71,15 +112,13 @@ ul{
 .column-position{
 	float: right;
 	width: 65%;
-	background: red;
 	text-align: center;
 }
 .nav li{
 	display: inline-block;
 	width: 31.7297%;
-	margin-right: 15px;
-	background: grey;
 	height: 50px;
+	margin-right: 15px;
 }
 .nav li:last-child{
 	margin: 0;
@@ -92,23 +131,40 @@ ul{
 .text{
 	margin-top: 117px;
 }
+.characters li{
+	float: left;
+	width: 13.9%;
+	margin-right: 3.3%;
+	text-align: center;
+}
 @media screen and (max-width: 1300px){
 		.nav{
 		clear: both;
 		display: block;
 		float: left;
 		width: 33%;
+		margin: 32px auto 0 auto;
 	}
 	.nav li{
 		display: block;
+		width: 65%;
 		margin: 0 auto;
 
 	}
 	.nav li:last-child{
 	margin: auto;
 	}
+	.characters li{
+		float: left;
+		width: 31%;
+		margin-right: 3.3%;
+		text-align: center;
+	}
+	.characters li:nth-of-type(3){
+		margin-right: 0;
+	}
 }
-@media (max-width: 960px){
+@media (max-width: 768px){
 	.logo{
 		width: 100%;
 		background: none;
@@ -120,9 +176,11 @@ ul{
 		position: absolute;
 		top: 0;
 		width: 100%;
+		margin: 0;
 	}
 	.nav li{
 		display: inline-block;
+		width: 31.7297%;
 	}
 	.text{
 		margin-top: 22%;
@@ -135,6 +193,9 @@ ul{
 		.logo a{
 		padding: 16%;
 	}
+	.nav li{
+		width: 31.7297%;
+	}
 		.text{
 		margin-top: 35%;
 	}
@@ -143,15 +204,37 @@ ul{
 		.logo a{
 		padding: 20%;
 	}
+	.nav li{
+		width: 31.7297%;
+	}
 		.text{
-		margin-top: 44%;
+		margin-top: 45%;
+	}
+	.characters li,
+	.characters li:nth-of-type(3){
+		margin-right: 4%;
+		width: 48%;
+	}
+		.characters li:nth-of-type(2),
+		.characters li:nth-of-type(4),
+		.characters li:nth-of-type(6){
+		margin-right: 0;
 	}
 }
+.characters li:last-child{
+	margin-right: 0;
+}
+.characters img{
+	max-width: 100%;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	margin: 0 auto 0.625em;
+}
+/*cosmetic*/
+.nav li{
 
-
-article,
-footer{
-	height: 100px;
-	border: 1px dashed pink;
-	background: blue !important;
+}
+.photos strong{
+	background: url("../images/bg.png");
+	padding: 0 1em;
 }
