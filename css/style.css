@@ -62,7 +62,7 @@ h1{
 h2{
 	font-size: 1.4em;
 	margin: 0.75em 0 1em;
-	background: url("../images/ornament.png") no-repeat 0 50%;
+	background: url("../images/ornament.png") no-repeat 50% 50%;
 }
 p{
 	font-size: 1em;
