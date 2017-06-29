@@ -52,6 +52,7 @@ body{
 a{
 	color: #890101;
 	text-decoration: none;
+	outline: none;
 }
 h1{
 	font-size: 2em;
