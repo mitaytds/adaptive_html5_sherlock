@@ -81,6 +81,10 @@ b{
 	letter-spacing: 0.17em;
 	font-weight: bold;
 }
+iframe{
+	width: 100%;
+	height: 100%;
+}
 footer{
 	font-size: 0.750em;
 	background: url("../images/ornament.png") 50% 0 repeat-x;
@@ -142,6 +146,44 @@ footer{
 	margin: 0 3.3% 1.5em 0;
 	text-align: center;
 }
+/* madal window for screen 1301px and more*/
+.popup:before{
+	position: relative;
+	content: "";
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.popup:target:before{
+	display: block;
+}
+.window{
+	position: fixed;
+	left: 20%;
+	top: -50%;
+	z-index: 11;
+	width: 60%;
+	height: 60%;
+	background: #ffffff;
+	transform: translate(0, -500%);
+	transition: transform 0.3s ease-out;
+}
+.popup:target .window{
+	transform: translate(0, 0);
+	top: 10%;
+}
+.close img{
+	position: fixed;
+	top: -17px;
+	right: -17px;
+	max-width: 15px;
+	height: 15px;
+}
 @media screen and (max-width: 1300px){
 	.nav{
 		clear: both;
@@ -175,6 +217,16 @@ footer{
 	}
 	.characters li:nth-of-type(3){
 		margin-right: 0;
+	}
+	.popup:target .window{
+		top: 25%;
+	}
+/* madal window for screen 769px and more*/
+	.window{
+		height: 70%;
+	}
+	.popup:target .window{
+		top: 15%;
 	}
 }
 @media (max-width: 768px){
@@ -211,6 +263,15 @@ footer{
 	.column-position{
 		min-width: 100%;
 	}
+/* madal window for screen 601px and more*/
+	.window{
+		left: 15%;
+		width: 70%;
+		height: 70%;
+	}
+		.popup:target .window{
+		top: 10%;
+	}
 }
 @media (max-width: 600px){
 	.logo a{
@@ -224,6 +285,15 @@ footer{
 	}
 	.text{
 		margin-top: 45%;
+	}
+	/* madal window for screen 401px and more*/
+	.popup:target .window{
+		top: 15%;
+	}
+		.window{
+		left: 5%;
+		width: 90%;
+		height: 70%;
 	}
 }
 @media (max-width: 400px){
@@ -268,4 +338,8 @@ a:hover{
 .photos strong{
 	background: url("../images/bg.png");
 	padding: 0 1em;
+}
+.close img:hover{
+	transition: 0.13s ease-in-out;
+	transform: rotate(90deg);
 }
