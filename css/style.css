@@ -324,7 +324,12 @@ footer{
 .characters li:last-child{
 	margin-right: 0;
 }
-.characters img{
+.history{
+	width: 48%;
+	margin: 0 auto 0 auto;
+}
+.characters img,
+.history img{
 	max-width: 100%;
 	border-radius: 4px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
