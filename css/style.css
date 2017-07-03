@@ -171,14 +171,17 @@ footer{
 	height: 60%;
 	background: #ffffff;
 	transform: translate(0, -500%);
+	-ms-transform: translate(0, -500%);
 	transition: transform 0.3s ease-out;
+	-ms-transition: transform 0.3s ease-out;
 }
 .popup:target .window{
 	transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
 	top: 10%;
 }
 .close img{
-	position: fixed;
+	position: absolute;
 	top: -17px;
 	right: -17px;
 	max-width: 15px;
