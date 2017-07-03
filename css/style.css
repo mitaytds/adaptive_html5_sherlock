@@ -185,9 +185,6 @@ footer{
 	height: 15px;
 }
 @media screen and (max-width: 1300px){
-	.mast{
-		z-index: -10;
-	}
 	.nav{
 		clear: both;
 		display: block;
@@ -238,16 +235,13 @@ footer{
 		background: none;
 	}
 	.logo a{
-		padding: 13%;
+		padding: 15%;
 	}
 	.nav{
 		position: absolute;
 		top: 0;
 		width: 100%;
 		margin: 0;
-	}
-	.nav a{
-		margin-bottom: -1em;
 	}
 	.nav li{
 		display: inline-block;
@@ -321,6 +315,9 @@ footer{
 		margin-right: 0;
 	}
 }
+.mast{
+	z-index: -10;
+}
 .characters li:last-child{
 	margin-right: 0;
 }
@@ -331,7 +328,7 @@ footer{
 	margin: 0 auto 0.625em;
 }
 .page-about{
-	margin-top: 25%;
+	min-height: 31.250em;
 }
 	/*COSMETIC*/
 
